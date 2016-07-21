@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<!-- Ajustes para layout responsivo
+		jquery.dataTables_themeroller
+	<script type="text/javascript" src="<?php echo base_url(); ?>padrao/js/jquery.min.js" ></script>
+		 -->
+
+<!--[if lte IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
+
+<![endif]-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Link's para CSS --><!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="../../css/bootstrap.min.css">
+
+<link rel="stylesheet" href="../../css/dashboard.css">
+<link rel="stylesheet" href="../../css/carousel.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/w3data.js"></script>
+<link rel="stylesheet" href="../../css/estilo.css" rel="stylesheet">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Shokuji Sushi</title>
+</head>
+<body>
+
+<div w3-include-html="../../topbar.html"></div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div w3-include-html="../../sidebar.html"></div>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 well">
+          <div id="slides" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#slides" data-slide-to="0" class="active"></li>
+              <li data-target="#slides" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="../../images/shokuji/principal.jpg" alt="Galera">
+              </div>
+              <div class="item">
+                <img src="../../images/shokuji/1.jpg" alt="Barca">
+              </div>
+            </div>
+            <a class="left carousel-control" href="#slides" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#slides" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Proxima</span>
+            </a>
+          </div>
+          <p class="lead text-justify">Oi gente, tudo bom?</p>
+          <p class="lead text-justify">Esse é nosso primeiro post, meu (Rafhaela) e do Ruan Victor! </p>
+          <p class="lead text-justify">Estamos aqui com o intuito de falar pra vocês pontos positivos e negativos do Restaurante Shokuji Arujá, que visitamos no dia 15/07/2016 .</p>
+          <p class="lead text-justify"><strong>Vamos lá!</strong></p>
+          <p class="lead text-justify">Já fomos ao Shokuji várias vezes, tanto a unidade Arujá, quanto a unidade Guarulhos.</p>
+          <p class="lead text-justify">De maneira geral, sempre fomos muito bem atendidos, e apreciamos grande maioria dos pratos de lá.</p>
+          <p class="lead text-justify">O rodizio no jantar custa por volta de 56 reais, o que é um preço razoável. (<a href="http://www.shokujisushi.com.br/rodizio.php">www.shokujisushi.com.br/rodizio.php</a>)</p>
+          <p class="lead text-justify">O ambiente é bem calmo e normalmente você é atendido rapidamente. O garçom que nos atendeu é bem simpático e explica com coerência os pratos do cardápio ( Estavamos com minha cunhada, que não conhecia todos os pratos por nome).</p>
+          <p class="lead text-justify">A entrada - ceviche - é boa, porém, existem melhores.</p>
+          <p class="lead text-justify">Nós somos <mark>V I C I A D O S</mark> em shimeji, e o shimeji do Shokuji é um dos melhores que já provamos, (por isso voltamos tantas vezes rs).</p>
+          <p class="lead text-justify">O salmão grelhado também é um ponto forte do restaurante, com porções generosas. O sashimi também é outro ponto importante: peixe fresquinho, que desmancha na boca - uma delícia!</p>
+          <p class="lead text-justify">Muitos restaurantes nos perderam como clientes por conta, também, de seu hot roll. O hot roll do shokuji é sequinho, bem recheado, e sua versão doce, de goiabada e maracujá, pra nós, é muito gostosa.</p>
+          <p class="lead text-justify">Na vez dos nigiris de salmão, podemos dizer que é comum, já o de salmão skin com limão, é um dos melhores já provados!  E os gunkan's ( nossos 'monstrinhos', rs) estavam maravilhosos também!</p>
+          <p class="lead text-justify">Os temakis, em outras vezes que visitamos o restaurante, estavam melhores também, deixaram a desejar no recheio, mais a alga, como sempre, bem crocante e fresquinha.</p>
+          <p class="lead text-justify">O Shokuji Sushi é uma opção com preço acessível, muitos pratos gostosos e atendimento coerente, uma ótima opção pra quem quer conhecer e não quer gastar muito, e lógico, pra quem já conhece mais não quer sair do orçamento.</p>
+          <p class="lead text-justify">Retornamos em breve!</p>
+          <p class="lead text-justify">Forte Abraço,</p>
+          <p class="lead text-justify">Casal Operação Sushi.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div id="disqus_thread"></div>
+          <script>
+
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+//           var disqus_config = function () {
+//              var PAGE_URL = 'www.operacaosushi.com.br',
+//              PAGE_IDENTIFIER = 'shokuji';
+//           this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+//           this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+//           };
+            (function() {  // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+
+              s.src = '//operaosushi.disqus.com/embed.js';
+
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+  w3IncludeHTML();
+</script>
+
+</html>

@@ -12,11 +12,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- Link's para CSS --><!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/restaurantes.css">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <link rel="stylesheet" href="css/dashboard.css">
 <link rel="stylesheet" href="css/carousel.css">
 <!-- Latest compiled and minified JavaScript -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/w3data.js"></script>
 <link rel="stylesheet" href="css/estilo.css" rel="stylesheet">
 
 <head>
@@ -24,39 +27,12 @@
 	<title>Operação Sushi</title>
 </head>
 <body>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">Operação Sushi</a>
-			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Contato</a></li>
-				</ul>
-				<form class="navbar-form navbar-right">
-					<input type="text" class="form-control" placeholder="Search...">
-				</form>
-			</div>
-		</div>
-	</nav>
+
+	<div w3-include-html="topbar.html"></div>
 
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-3 col-md-2 sidebar">
-				<ul class="nav nav-sidebar">
-					<li class="active"><a href="#">Restaurantes <span class="sr-only">(current)</span></a></li>
-					<!--<li><a href="#">Reports</a></li>-->
-					<!--<li><a href="#">Analytics</a></li>-->
-					<!--<li><a href="#">Export</a></li>-->
-				</ul>
-			</div>
+			<div w3-include-html="sidebar.html"></div>
 			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 				<div class="row">
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -72,7 +48,16 @@
 								<div class="container">
 									<div class="carousel-caption">
 										<h1>Operação Sushi!</h1>
-										<p>Site em desenvolvimento.</p>
+										<p>Loucos pela Culinaria Japonesa.</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<img class="" src="images/shokuji/principal.jpg">
+								<div class="container">
+									<div class="carousel-caption">
+										<h1><a href="posts/shokuji/shokuji.html">Shokuji Arujá!</a></h1>
+										<p>Sexta feira em grupo com muito sushi.</p>
 									</div>
 								</div>
 							</div>
@@ -88,12 +73,15 @@
 					</div>
 				</div>
 				<div class="row">
-
+					<div class="col-lg-4">
+						<div w3-include-html="feed/shokuji.html"></div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+	w3IncludeHTML();
+</script>
 </html>
