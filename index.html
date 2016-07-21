@@ -74,7 +74,7 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-4">
-						<div w3-include-html="feed/shokuji.html"></div>
+						<div  w3-include-html="feed/shokuji.html" onclick="shokuji()"></div>
 					</div>
 				</div>
 			</div>
@@ -82,6 +82,9 @@
 	</div>
 </body>
 <script>
+	function shokuji(){
+		window.location = 'posts/shokuji/shokuji.html';
+	}
 	w3IncludeHTML();
 </script>
 </html>
